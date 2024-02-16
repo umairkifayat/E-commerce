@@ -1,18 +1,14 @@
-import axios from 'axios'
 import React from 'react'
+import Routerconfig from './config/routerconfig/Routerconfig'
 
 const App = () => {
-
-   axios.get('https://dummyjson.com/products') 
-   .then((res)=>{
-    console.log(res.data);
-   })
-
   return (
     <div>
-      hello world
-      </div>
+      <Routerconfig />
+      
+    </div>
   )
 }
 
+<Routerconfig />
 export default App
